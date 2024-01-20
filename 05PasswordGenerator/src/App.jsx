@@ -26,7 +26,7 @@ function App() {
   },[length,numberAllowed,charAllowed])
   const copyToClipboard=()=>{
     window.navigator.clipboard.writeText(password)
-    passwordRef.current.select()
+    passwordRef.current?.select()
     
   }
   return (
@@ -39,7 +39,7 @@ function App() {
         </div>
         <div className="flex text-sm gap-x-2">
           <div className="flex items-center gap-x-1">
-            <input type="range" name="" id=" " min={6} max={100} value={length} className="cursor-pointer" onChange={(e) => setLength(e.target.value)} />
+            <input type="range" name="" id=" " min={6} max={35} value={length} className="cursor-pointer" onChange={(e) => setLength(e.target.value)} />
             <label htmlFor="length">Length: {length}</label>
           </div>
           <div className="flex items-center gap-x-1">
