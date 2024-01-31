@@ -20,10 +20,10 @@ function App() {
     }
     
     setPassword(pass)
-  },[length,numberAllowed,charAllowed])
+  },[length,numberAllowed,charAllowed,setPassword])
   useEffect(()=>{
    generatePassword()
-  },[length,numberAllowed,charAllowed])
+  },[length,numberAllowed,charAllowed,generatePassword])
   const copyToClipboard=()=>{
     window.navigator.clipboard.writeText(password)
     passwordRef.current?.select()

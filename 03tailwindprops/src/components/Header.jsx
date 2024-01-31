@@ -5,7 +5,7 @@ function Header() {
     <div className='flex py-1' >
       <img src="https://formease.app/images/logo.png" alt="FormEase" className=' w-[10.33%] h-[12%] sp'/>
  <ul className='flex'>
-    <li className='sp'>Home</li>
+    <li className='sp' style={{color:'blue'}}>Home</li>
     <li className='sp'>Exam</li>
     <li className='sp'>FAQ</li>
     <li className='sp'>About Us</li>
