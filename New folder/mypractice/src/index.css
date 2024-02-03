@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.sp{
+  margin: 24px 14px;
+  font-weight:600;
+  cursor: pointer;
+}
+.sp:hover{
+  color:#246BFD
+}
+input{
+  margin: 20px 40px  !important;
+}
